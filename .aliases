@@ -66,8 +66,12 @@ alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
 =======
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+<<<<<<< HEAD
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g;'
 >>>>>>> first change for my preference in aliases
+=======
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g;sudo gem update --system; sudo gem update'
+>>>>>>> update gem when use update function
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
