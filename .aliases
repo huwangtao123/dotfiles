@@ -7,9 +7,12 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 <<<<<<< HEAD
+<<<<<<< HEAD
 alias -- -="cd -"
 =======
 >>>>>>> min change
+=======
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 
 # Shortcuts
 alias d="cd ~/Downloads"
@@ -23,9 +26,18 @@ alias j="jobs"
 alias p="ps aux"
 alias s='subl .'
 alias rr='rm -rf'
+<<<<<<< HEAD
 alias listaliases="alias | sed 's/=.*//'"
 alias listfunctions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
 >>>>>>> first change for my preference in aliases
+=======
+alias lista="alias | sed 's/=.*//'"
+alias listf="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
+
+# Shortcut for Hexo
+alias hgs="hexo g && hexo server -p 5000"
+alias hgd="hexo g && hexo d"
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -62,6 +74,7 @@ alias week='date +%V'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 <<<<<<< HEAD
+<<<<<<< HEAD
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 
 <<<<<<< HEAD
@@ -79,12 +92,19 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew c
 =======
 alias update='brew update; brew upgrade --all; brew cleanup;'
 >>>>>>> min change
+=======
+alias update='brew update; brew upgrade --all; brew cleanup;'
+=======
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+>>>>>>> upstream/master
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Show active network interfaces
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
@@ -93,10 +113,13 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 =======
 >>>>>>> first change for my preference in aliases
+=======
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Canonical hex dump; some systems have this symlinked
 command -v hd > /dev/null || alias hd="hexdump -C"
@@ -107,12 +130,17 @@ command -v md5sum > /dev/null || alias md5sum="md5"
 # macOS has no `sha1sum`, so use `shasum` as a fallback
 command -v sha1sum > /dev/null || alias sha1sum="shasum"
 =======
+=======
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
+<<<<<<< HEAD
 >>>>>>> first change for my preference in aliases
 
+=======
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 # JavaScriptCore REPL
 jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc";
 [ -e "${jscbin}" ] && alias jsc="${jscbin}";
@@ -146,11 +174,14 @@ alias spotoff="sudo mdutil -a -i off"
 # Enable Spotlight
 alias spoton="sudo mdutil -a -i on"
 
+<<<<<<< HEAD
 # PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
 alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # Airport CLI alias
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
+=======
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
@@ -165,9 +196,12 @@ done
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
 
+<<<<<<< HEAD
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume output volume 100'"
+=======
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description

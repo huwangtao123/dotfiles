@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# Tao's dotfiles based on Mathias’s dotfiles
+=======
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 # Mathias’s dotfiles
 
 ![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
@@ -6,9 +11,13 @@
 ## Installation
 
 **Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
+<<<<<<< HEAD
 =======
 # Tao's dotfiles based on Mathias’s dotfiles
 >>>>>>> modify README.md
+=======
+>>>>>>> upstream/master
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 
 ### Using Git and the bootstrap script
 
@@ -23,6 +32,7 @@ set -- -f; source bootstrap.sh
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Git-free install
 
 To install these dotfiles without Git:
@@ -35,6 +45,8 @@ To update later on, just run that command again.
 
 =======
 >>>>>>> modify README.md
+=======
+>>>>>>> 0592b0728cbeddce7106b7f72890b9940d82ebd0
 ### Specify the `$PATH`
 
 If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/mathiasbynens/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-26)) takes place.
