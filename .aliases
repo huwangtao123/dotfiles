@@ -7,8 +7,6 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 
-alias --="cd -"
-
 # Shortcuts
 alias d="cd ~/Downloads"
 alias dt="cd ~/Desktop"
@@ -62,7 +60,7 @@ alias week='date +%V'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;brew cu -all; npm install npm -g; npm update -g;
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;brew cu -a; npm install npm -g; npm update -g;'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
